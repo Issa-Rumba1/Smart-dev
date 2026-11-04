@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /database/
+Disallow: /uploads/cv/
+
+Sitemap: https://yourdomain.com/sitemap.xml

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of SMART DEV – Projects by Issa Nyamawi Rumba including web development, database systems and IT solutions.">
+  <title>Portfolio | SMART DEV – Issa Nyamawi Rumba</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="html-preview.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo" aria-label="SMART DEV Home">
+      <div class="logo-icon"><span class="logo-s">S</span><span class="logo-d">D</span></div>
+      <div class="logo-text">
+        <span class="brand-name">SMART DEV</span>
+        <span class="brand-tagline">Innovation. Technology.</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="../admin/login.php" class="nav-admin-btn"><i class="fas fa-lock"></i> Admin</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i class="fas fa-moon" id="themeIcon"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="badge">My Work</span>
+      <h1>My <span class="orange">Portfolio</span></h1>
+      <p>Projects showcasing web development, database solutions and IT work</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Projects</span>
+      <h2>What I've <span>Built</span></h2>
+      <p>A growing collection of projects. More coming as SMART DEV expands its portfolio.</p>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="PHP">PHP</button>
+      <button class="filter-btn" data-filter="MySQL">MySQL</button>
+      <button class="filter-btn" data-filter="HTML5">HTML5</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card" data-tech="PHP MySQL HTML5 CSS3 JavaScript">
+        <div class="project-thumbnail placeholder-thumb">
+          <i class="fas fa-globe"></i>
+        </div>
+        <div class="project-content">
+          <span class="project-badge featured">Featured</span>
+          <h3>SMART DEV Portfolio Website</h3>
+          <p>A full-stack personal portfolio and IT services website built with PHP 8, MySQL, HTML5, CSS3 and JavaScript, complete with a custom admin CMS for managing all content.</p>
+          <div class="project-tech">
+            <span>PHP 8</span><span>MySQL</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline btn-sm" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="btn btn-dark btn-sm" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Empty State Note -->
+    <div class="portfolio-note" style="text-align:center;padding:2rem 0;color:var(--grey-mid);">
+      <i class="fas fa-info-circle" style="color:var(--orange);margin-right:0.5rem;"></i>
+      More projects will appear here once added through the admin panel.
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Have a Project <span>In Mind?</span></h2>
+      <p>Let's discuss your idea and turn it into a working solution with SMART DEV.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> Start a Conversation</a>
+        <a href="services.html" class="btn btn-outline btn-lg"><i class="fas fa-concierge-bell"></i> View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-icon small"><span class="logo-s">S</span><span class="logo-d">D</span></div>
+        <span class="brand-name">SMART DEV</span>
+      </div>
+      <p class="footer-tagline">Innovation. Technology. Digital Solutions.</p>
+      <p class="footer-desc">A professional technology and digital solutions brand by <strong>Issa Nyamawi Rumba</strong>.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Computer Maintenance</a></li>
+        <li><a href="services.html">Networking</a></li>
+        <li><a href="services.html">Web Development</a></li>
+        <li><a href="services.html">Database Management</a></li>
+        <li><a href="services.html">Graphic Design</a></li>
+        <li><a href="services.html">IT Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Get In Touch</h4>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:contact@smartdev.co.ke">contact@smartdev.co.ke</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> Kwale, Kinango, Kenya</p>
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <strong>SMART DEV</strong> &mdash; Issa Nyamawi Rumba. All rights reserved.</p>
+    <p class="footer-stack">Built with <i class="fas fa-heart" style="color:#F47B20"></i> using PHP, MySQL &amp; HTML5</p>
+  </div>
+</footer>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+<script src="../assets/js/script.js"></script>
+<script>
+  // Portfolio filter for static page
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.project-card').forEach(card => {
+        if (filter === 'all' || card.dataset.tech.includes(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
